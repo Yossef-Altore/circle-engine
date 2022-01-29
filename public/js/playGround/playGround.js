@@ -101,4 +101,9 @@ function changeControlDiv() {
 }
 canvasControlDiv.addEventListener("mouseenter", () => {
   canvasControlDiv.style.opacity = "1";
+  canvasControlDiv.style.height = "100px";
+});
+canvasControlDiv.addEventListener("mouseleave", () => {
+  canvasControlDiv.style.opacity = "0.05";
+  canvasControlDiv.style.height = "60px";
 });
