@@ -89,27 +89,28 @@
     h3 {
       position: absolute;
       left: 20px;
+      font-size: 1.5vw;
     }
     input {
       padding: 5px;
       background-color: white;
       color: black;
       border-radius: 25px;
+      width: 12vw;
     }
     #addBtn {
       padding: 5px 20px;
       background-color: white;
       color: black;
       border-radius: 10px;
-      font-size: 20px;
+      font-size: 1.2vw;
       cursor: pointer;
       background-color: rgb(81, 153, 81);
     }
     #clearBtn {
       @extend #addBtn;
-      position: absolute;
+      margin-left: 6vw;
       background-color: rgb(189, 77, 77);
-      right: 150px;
     }
   }
 }
