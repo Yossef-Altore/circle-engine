@@ -9,6 +9,13 @@ let canvas = document.querySelector("#canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let c = canvas.getContext("2d");
+//resize canvas when resizing window
+function windowResize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+window.addEventListener("resize", windowResize);
 
 function Circle(x, y, dx, dy, radius, a, b, d) {
   this.x = x;

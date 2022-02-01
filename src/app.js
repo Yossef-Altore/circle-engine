@@ -4,7 +4,6 @@ const path = require("path");
 
 // the port
 const port = process.env.PORT || 3000;
-
 // the paths
 const publicDirPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
@@ -18,7 +17,6 @@ hbs.registerPartials(partialsPath);
 
 //static folder
 app.use(express.static(publicDirPath));
-
 // set index page
 
 app.get("/", (req, res) => {
